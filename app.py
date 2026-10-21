@@ -6,11 +6,14 @@ import random
 
 import streamlit as st
 
+import dougalien_brand as brand
+
 from rock_data import (BIG_IDEAS, GLOSSARY, GROUPS, MOVES, PROCESSES, ROCK_BY_NAME,
                        ROCKS, STATES, img_url, photo_caption, photo_count, photo_label,
                        photo_src)
 
-st.set_page_config(page_title="Explore the Rock Cycle", page_icon="🪨", layout="wide")
+st.set_page_config(page_title="Explore the Rock Cycle", page_icon=brand.page_icon("🪨"), layout="wide")
+brand.apply_branding()
 
 PAGES = ["🏠 Welcome", "🔄 The Big Picture", "🖼️ Rock Gallery", "🧭 Take a Journey",
          "🔍 Rock Detective", "📖 Glossary"]
